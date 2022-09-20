@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Quicksand-Bold-Italic.ttf",
+      "sha1": "629680e87152f8ef933fe043490d73694b8d2451"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Bold.ttf",
+      "sha1": "82241d42d4abc5eda794ca1af140b0e69543cffe"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Light-Italic.ttf",
+      "sha1": "64d246f012ee1dbc5ae3647f86016db61644edcb"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Light.ttf",
+      "sha1": "b6d978adb86599ba35e5c97917b26f06e10c9361"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Medium.ttf",
+      "sha1": "bb6fc51ffb9d7b5cf567407095f75ddb4b13ca80"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Regular-Italic.ttf",
+      "sha1": "be23db3eb04cdb2096a8dcf23416c25e50b9dc68"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Regular.ttf",
+      "sha1": "edfa7348d5686ab530f4e0a2feac6aa9bd02f09c"
+    },
+    {
+      "path": "assets/fonts/Quicksand-SemiBold.ttf",
+      "sha1": "4a0fed7f4392872594cdc50fead1510da1dcdac3"
+    }
+  ]
+}
