@@ -11,15 +11,15 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import nameof from 'ts-nameof.macro';
 import {enableScreens} from 'react-native-screens';
 import 'react-native-gesture-handler';
-import HomeScreen from 'src/screens/HomeScreen/HomeScreen';
 import {NavigationContainer} from '@react-navigation/native';
+import RootNavigator from 'src/navigators/RootNavigator/RootNavigator';
 
 enableScreens();
 
 const App = React.lazy(async () => {
   return {
     default: function RootComponent() {
-      return <HomeScreen />;
+      return <RootNavigator />;
     },
   };
 });

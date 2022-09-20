@@ -1,13 +1,14 @@
 import type {FC, PropsWithChildren, ReactElement} from 'react';
 import React from 'react';
 import nameof from 'ts-nameof.macro';
-import styles from './MainTabBar.scss';
 import type {SvgComponent} from 'react-native-svg-types';
 import type {StackScreenProps} from '@react-navigation/stack';
 import {SafeAreaView, View} from 'react-native';
 import {atomicStyles} from 'src/styles';
 import TabBarIcon from 'src/components/organisms/MainTabBar/TabBarIcon/TabBarIcon';
 import HomeScreen from 'src/screens/HomeScreen/HomeScreen';
+import {mainTabBarStyles} from 'src/components/organisms/MainTabBar/MainTabBar.styles';
+import {ExploreScreen} from 'src/screens';
 
 /**
  * File: MainTabBar.tsx
@@ -34,21 +35,30 @@ const MainTabBar: FC<PropsWithChildren<MainTabBarProps>> = (
     return [
       {
         routeName: HomeScreen.displayName,
-        icon: require('/assets/icons/tab/HomeW.svg'),
-        activeIcon: require('/assets/icons/tab/Home.svg'),
+        icon: require('assets/icons/tab/HomeW.svg'),
+        activeIcon: require('assets/icons/tab/Home.svg'),
         onPress: () => {
           navigation.navigate(HomeScreen.displayName);
         },
-        iconName: 'Trang chủ',
+        iconName: 'Home',
+      },
+      {
+        routeName: ExploreScreen.displayName,
+        icon: require('assets/icons/tab/ExploreW.svg'),
+        activeIcon: require('assets/icons/tab/Explore.svg'),
+        onPress: () => {
+          navigation.navigate(ExploreScreen.displayName);
+        },
+        iconName: 'Explore',
       },
     ];
   }, [navigation]);
 
   return (
-    <SafeAreaView style={[styles.bottomTabContainer]}>
+    <SafeAreaView style={[mainTabBarStyles.bottomTabContainer]}>
       <View
         style={[
-          styles.bottomTabs,
+          mainTabBarStyles.bottomTabs,
           atomicStyles.flexRow,
           atomicStyles.justifyContentAround,
           atomicStyles.alignItemsCenter,

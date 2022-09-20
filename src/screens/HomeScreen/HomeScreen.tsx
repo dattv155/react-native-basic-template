@@ -9,8 +9,14 @@ import {homeScreenStyles} from './HomeScreen.styles';
 import {borderStyles} from 'src/styles/border-styles';
 import SvgIcon from 'src/components/atoms/SvgIcon';
 import {atomicStyles} from 'src/styles';
+import MainTabBar from 'src/components/organisms/MainTabBar/MainTabBar';
+import type {StackScreenProps} from '@react-navigation/stack';
 
-const HomeScreen: FC<PropsWithChildren<HomeScreenProps>> = (): ReactElement => {
+const HomeScreen: FC<PropsWithChildren<HomeScreenProps>> = (
+  props: PropsWithChildren<HomeScreenProps>,
+): ReactElement => {
+  const {navigation, route} = props;
+
   const [listData, handleFetchData] = useList();
 
   const renderItem: ListRenderItem<ProductData> = React.useCallback(
@@ -60,11 +66,13 @@ const HomeScreen: FC<PropsWithChildren<HomeScreenProps>> = (): ReactElement => {
           Fetch Random
         </Text>
       </TouchableOpacity>
+
+      <MainTabBar navigation={navigation} route={route} />
     </View>
   );
 };
 
-export interface HomeScreenProps {
+export interface HomeScreenProps extends StackScreenProps<any> {
   //
 }
 
