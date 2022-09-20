@@ -2,13 +2,13 @@ import type {FC, PropsWithChildren, ReactElement} from 'react';
 import React from 'react';
 import nameof from 'ts-nameof.macro';
 import type {SvgComponent} from 'react-native-svg-types';
-import type {StackScreenProps} from '@react-navigation/stack';
 import {SafeAreaView, View} from 'react-native';
 import {atomicStyles} from 'src/styles';
 import TabBarIcon from 'src/components/organisms/MainTabBar/TabBarIcon/TabBarIcon';
 import HomeScreen from 'src/screens/HomeScreen/HomeScreen';
 import {mainTabBarStyles} from 'src/components/organisms/MainTabBar/MainTabBar.styles';
 import {ExploreScreen} from 'src/screens';
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 /**
  * File: MainTabBar.tsx
@@ -62,10 +62,6 @@ const MainTabBar: FC<PropsWithChildren<MainTabBarProps>> = (
           atomicStyles.flexRow,
           atomicStyles.justifyContentAround,
           atomicStyles.alignItemsCenter,
-          {
-            borderTopWidth: 0,
-            elevation: 10,
-          },
         ]}>
         {tabs.map((tab, index: number) => (
           <TabBarIcon
@@ -83,7 +79,7 @@ const MainTabBar: FC<PropsWithChildren<MainTabBarProps>> = (
   );
 };
 
-export interface MainTabBarProps extends StackScreenProps<any> {
+export interface MainTabBarProps extends NativeStackScreenProps<any> {
   //
 }
 

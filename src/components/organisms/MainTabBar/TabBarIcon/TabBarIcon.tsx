@@ -50,10 +50,9 @@ const TabBarIcon: FC<PropsWithChildren<TabBarIconProps>> = (
             ]}>
             <Text
               style={[
-                atomicStyles.h6,
+                atomicStyles.h5,
                 atomicStyles.bold,
-                tabBarIconStyles.textStyle,
-                atomicStyles.textDark,
+                atomicStyles.textBlue,
               ]}>
               {iconName}
             </Text>

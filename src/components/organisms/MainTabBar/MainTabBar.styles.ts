@@ -9,6 +9,8 @@ export const mainTabBarStyles = StyleSheet.create({
     borderTopRightRadius: 35,
     borderTopLeftRadius: 35,
     paddingBottom: 5,
+    borderTopWidth: 0,
+    elevation: 10,
   },
 
   bottomTabContainer: {

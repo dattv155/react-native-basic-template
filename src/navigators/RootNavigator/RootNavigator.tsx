@@ -1,28 +1,23 @@
-import {
-  CardStyleInterpolators,
-  createStackNavigator,
-} from '@react-navigation/stack';
 import type {FC, PropsWithChildren, ReactElement} from 'react';
 import React from 'react';
 import * as Screens from 'src/screens';
 import nameof from 'ts-nameof.macro';
-import TabNavigator from 'src/navigators/TabNavigator/TabNavigator';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {HomeScreen} from 'src/screens';
 
-const {Navigator, Screen} = createStackNavigator();
+const {Navigator, Screen} = createNativeStackNavigator();
 
 const RootNavigator: FC<
   PropsWithChildren<RootNavigatorProps>
 > = (): ReactElement => {
   return (
     <Navigator
-      initialRouteName={TabNavigator.displayName}
+      initialRouteName={HomeScreen.displayName}
       screenOptions={{
         headerShown: false,
-        cardOverlayEnabled: true,
-        animationEnabled: true,
-        // gestureEnabled: true,
+        gestureEnabled: true,
         gestureDirection: 'horizontal',
-        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+        animation: 'none',
       }}>
       {[...Object.values(Screens)].map((ScreenComponent: any) => (
         <Screen
@@ -32,11 +27,6 @@ const RootNavigator: FC<
           initialParams={{}}
         />
       ))}
-      <Screen
-        name={TabNavigator.displayName}
-        component={TabNavigator}
-        initialParams={{}}
-      />
     </Navigator>
   );
 };

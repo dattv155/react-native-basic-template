@@ -2,17 +2,15 @@ import type {FC, PropsWithChildren, ReactElement} from 'react';
 import React from 'react';
 import nameof from 'ts-nameof.macro';
 import {Text, View} from 'react-native';
-import type {StackScreenProps} from '@react-navigation/stack';
 import {exploreScreenStyles} from 'src/screens/ExploreScreen/ExploreScreen.styles';
 import MainTabBar from 'src/components/organisms/MainTabBar/MainTabBar';
 import {atomicStyles} from 'src/styles';
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 const ExploreScreen: FC<PropsWithChildren<ExploreScreenProps>> = (
   props: PropsWithChildren<ExploreScreenProps>,
 ): ReactElement => {
   const {navigation, route} = props;
-
-  const {} = route.params;
 
   return (
     <>
@@ -28,7 +26,7 @@ const ExploreScreen: FC<PropsWithChildren<ExploreScreenProps>> = (
 };
 
 export interface ExploreScreenProps
-  extends StackScreenProps<Record<string, any>> {
+  extends NativeStackScreenProps<Record<string, any>> {
   //
 }
 

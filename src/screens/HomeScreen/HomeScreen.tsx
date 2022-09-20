@@ -10,7 +10,7 @@ import {borderStyles} from 'src/styles/border-styles';
 import SvgIcon from 'src/components/atoms/SvgIcon';
 import {atomicStyles} from 'src/styles';
 import MainTabBar from 'src/components/organisms/MainTabBar/MainTabBar';
-import type {StackScreenProps} from '@react-navigation/stack';
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 const HomeScreen: FC<PropsWithChildren<HomeScreenProps>> = (
   props: PropsWithChildren<HomeScreenProps>,
@@ -72,7 +72,7 @@ const HomeScreen: FC<PropsWithChildren<HomeScreenProps>> = (
   );
 };
 
-export interface HomeScreenProps extends StackScreenProps<any> {
+export interface HomeScreenProps extends NativeStackScreenProps<any> {
   //
 }
 
