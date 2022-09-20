@@ -1,7 +1,7 @@
 import React from 'react';
-import type {AxiosResponse} from 'axios';
 import axios from 'axios';
 import {useNavigation} from '@react-navigation/native';
+import {dataRepository} from 'src/repositories/data-repository';
 
 export type ProductData = {
   id: number;
@@ -21,10 +21,10 @@ export function useList(): [ProductData[], () => Promise<void>, boolean] {
 
   const handleFetchData = React.useCallback(async () => {
     setLoading(true);
-    await axios
-      .get<ProductData[]>('https://hiring-test.stag.tekoapis.net/api/products')
-      .then((response: AxiosResponse<ProductData[]>) => {
-        setListData(response.data);
+    await dataRepository
+      .getData()
+      .then((response: ProductData[]) => {
+        setListData(response);
         setLoading(false);
       })
       .catch((error: any) => {

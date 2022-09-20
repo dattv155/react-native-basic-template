@@ -49,16 +49,6 @@ const HomeScreen: FC<PropsWithChildren<HomeScreenProps>> = (
 
   return (
     <View style={homeScreenStyles.container}>
-      <View style={[homeScreenStyles.listContainer]}>
-        {listData?.length > 0 && (
-          <FlatList
-            data={listData}
-            keyExtractor={item => item.id.toString()}
-            renderItem={renderItem}
-          />
-        )}
-      </View>
-
       <TouchableOpacity
         onPress={handleFetchData}
         style={[homeScreenStyles.button]}>
@@ -66,6 +56,15 @@ const HomeScreen: FC<PropsWithChildren<HomeScreenProps>> = (
           Fetch Random
         </Text>
       </TouchableOpacity>
+      {/*<View style={[homeScreenStyles.listContainer]}>*/}
+      {/*  {listData?.length > 0 && (*/}
+      {/*    <FlatList*/}
+      {/*      data={listData}*/}
+      {/*      keyExtractor={item => item.id.toString()}*/}
+      {/*      renderItem={renderItem}*/}
+      {/*    />*/}
+      {/*  )}*/}
+      {/*</View>*/}
 
       <MainTabBar navigation={navigation} route={route} />
     </View>
