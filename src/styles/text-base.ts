@@ -2,20 +2,21 @@ import type {TextStyle} from 'react-native';
 import {StyleSheet} from 'react-native';
 import {Colors} from 'src/styles/colors';
 
-const Font = 'Quicksand';
+const Font = 'Inter';
 
 const fontFamily = {
+  light: 'Light',
   normal: 'Regular',
   bold: 'Bold',
-  '100': 'Light',
-  '200': 'Light',
+  '100': 'Thin',
+  '200': 'ExtraLight',
   '300': 'Light',
   '400': 'Regular',
-  '500': 'Regular',
+  '500': 'Medium',
   '600': 'SemiBold',
   '700': 'Bold',
-  '800': 'Bold',
-  '900': 'Bold',
+  '800': 'ExtraBold',
+  '900': 'Black',
 };
 
 const disableStyles: TextStyle = {
@@ -30,13 +31,23 @@ export const getFont = (fontWeight: number = 400, fontStyle?: string) => {
 };
 
 export const textBase = StyleSheet.create({
-  light: {
+  thin: {
+    fontFamily: getFont(100),
+    ...disableStyles,
+  },
+
+  extraLight: {
     fontFamily: getFont(200),
     ...disableStyles,
   },
 
+  light: {
+    fontFamily: getFont(300),
+    ...disableStyles,
+  },
+
   lightItalic: {
-    fontFamily: getFont(200, 'italic'),
+    fontFamily: getFont(300, 'italic'),
     ...disableStyles,
   },
 
@@ -45,8 +56,18 @@ export const textBase = StyleSheet.create({
     ...disableStyles,
   },
 
-  italic: {
+  regularItalic: {
     fontFamily: getFont(400, 'italic'),
+    ...disableStyles,
+  },
+
+  medium: {
+    fontFamily: getFont(500),
+    ...disableStyles,
+  },
+
+  mediumItalic: {
+    fontFamily: getFont(500, 'italic'),
     ...disableStyles,
   },
 
@@ -56,12 +77,27 @@ export const textBase = StyleSheet.create({
   },
 
   bold: {
-    fontFamily: getFont(800),
+    fontFamily: getFont(700),
     ...disableStyles,
   },
 
   boldItalic: {
-    fontFamily: getFont(800, 'italic'),
+    fontFamily: getFont(700, 'italic'),
+    ...disableStyles,
+  },
+
+  extraBold: {
+    fontFamily: getFont(800),
+    ...disableStyles,
+  },
+
+  black: {
+    fontFamily: getFont(900),
+    ...disableStyles,
+  },
+
+  blackItalic: {
+    fontFamily: getFont(900, 'italic'),
     ...disableStyles,
   },
 

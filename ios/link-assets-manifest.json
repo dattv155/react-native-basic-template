@@ -2,36 +2,68 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Quicksand-Bold-Italic.ttf",
-      "sha1": "629680e87152f8ef933fe043490d73694b8d2451"
+      "path": "assets/fonts/Inter-Black-Italic.ttf",
+      "sha1": "28c8529f29539067fce1ed18408c4ef97ae7cca3"
     },
     {
-      "path": "assets/fonts/Quicksand-Bold.ttf",
-      "sha1": "82241d42d4abc5eda794ca1af140b0e69543cffe"
+      "path": "assets/fonts/Inter-Black.ttf",
+      "sha1": "283fa65b96dc1f2d71c6504afb9610447bdcdf1b"
     },
     {
-      "path": "assets/fonts/Quicksand-Light-Italic.ttf",
-      "sha1": "64d246f012ee1dbc5ae3647f86016db61644edcb"
+      "path": "assets/fonts/Inter-Bold-Italic.ttf",
+      "sha1": "544e95ce38b47e6d7309101e9a5e9cb7246d527c"
     },
     {
-      "path": "assets/fonts/Quicksand-Light.ttf",
-      "sha1": "b6d978adb86599ba35e5c97917b26f06e10c9361"
+      "path": "assets/fonts/Inter-Bold.ttf",
+      "sha1": "48747b7a60086f97af0d373febcbd1f1bee87f17"
     },
     {
-      "path": "assets/fonts/Quicksand-Medium.ttf",
-      "sha1": "bb6fc51ffb9d7b5cf567407095f75ddb4b13ca80"
+      "path": "assets/fonts/Inter-ExtraBold-Italic.ttf",
+      "sha1": "3cc047c818c83a59dd2ed16e6e8354fa8819d0c1"
     },
     {
-      "path": "assets/fonts/Quicksand-Regular-Italic.ttf",
-      "sha1": "be23db3eb04cdb2096a8dcf23416c25e50b9dc68"
+      "path": "assets/fonts/Inter-ExtraBold.ttf",
+      "sha1": "bff772be6bca9895c6fdcd57e5d5be9a47f2e058"
     },
     {
-      "path": "assets/fonts/Quicksand-Regular.ttf",
-      "sha1": "edfa7348d5686ab530f4e0a2feac6aa9bd02f09c"
+      "path": "assets/fonts/Inter-ExtraLight.ttf",
+      "sha1": "421072aef8610cb0f79661b494442a4b9363b43f"
     },
     {
-      "path": "assets/fonts/Quicksand-SemiBold.ttf",
-      "sha1": "4a0fed7f4392872594cdc50fead1510da1dcdac3"
+      "path": "assets/fonts/Inter-Light-Italic.otf",
+      "sha1": "84c9a24e8e96d86d2dca79edf8bd07359c82220f"
+    },
+    {
+      "path": "assets/fonts/Inter-Light.ttf",
+      "sha1": "dd9ec1ae67dd85143bacf7a3cb37e9f0ac979843"
+    },
+    {
+      "path": "assets/fonts/Inter-Medium-Italic.ttf",
+      "sha1": "ee08f2c9708cc2d335bebe623aa558434cf00780"
+    },
+    {
+      "path": "assets/fonts/Inter-Medium.ttf",
+      "sha1": "a418a8ba73bbcfa8c131c426ab836d78457afa9b"
+    },
+    {
+      "path": "assets/fonts/Inter-Regular-Italic.ttf",
+      "sha1": "ac7414db99972869e8648faa2e13e489c2a0a7ee"
+    },
+    {
+      "path": "assets/fonts/Inter-Regular.ttf",
+      "sha1": "7237d9cf55f177702066a28a4dde1e4c7e8ab576"
+    },
+    {
+      "path": "assets/fonts/Inter-SemiBold-Italic.ttf",
+      "sha1": "a091aaa036bb786bcd03f7e13977178616dcaf3f"
+    },
+    {
+      "path": "assets/fonts/Inter-SemiBold.ttf",
+      "sha1": "431007da316de60d85174aeec9b8389b5c73e7d6"
+    },
+    {
+      "path": "assets/fonts/Inter-Thin.ttf",
+      "sha1": "297919d59c9ba4fa17251cdb9f06c26ca906e593"
     }
   ]
 }
