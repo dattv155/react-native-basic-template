@@ -1,8 +1,11 @@
 {
   "name": "BasicTemplate",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "description": "React Native Basic Typescript Template",
   "repository": "https://github.com/dattv155/BasicTemplate.git",
   "author": "Trong Dat Vu <trongdat1505@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "ora": "^6.1.2"
+  }
 }
