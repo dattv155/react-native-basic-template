@@ -1,8 +1,8 @@
 {
-  "name": "BasicTemplate",
+  "name": "@dattv155/react-native-basic-template",
   "version": "0.0.1",
   "description": "React Native Basic Typescript Template",
-  "repository": "https://github.com/dattv155/BasicTemplate.git",
+  "repository": "https://github.com/dattv155/react-native-basic-template.git",
   "author": "Trong Dat Vu <trongdat1505@gmail.com>",
   "license": "MIT"
 }
