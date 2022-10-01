@@ -4,8 +4,5 @@
   "description": "React Native Basic Typescript Template",
   "repository": "https://github.com/dattv155/BasicTemplate.git",
   "author": "Trong Dat Vu <trongdat1505@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "ora": "^6.1.2"
-  }
+  "license": "MIT"
 }
