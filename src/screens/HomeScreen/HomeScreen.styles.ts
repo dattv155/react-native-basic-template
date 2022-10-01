@@ -1,64 +1,35 @@
 import {StyleSheet} from 'react-native';
-import {SCREEN_WIDTH} from 'src/configs/consts';
-
-const itemWidth = (SCREEN_WIDTH - 48) / 2;
+import {Colors} from 'src/styles';
 
 export const homeScreenStyles = StyleSheet.create({
-  container: {
-    backgroundColor: 'white',
-    flex: 1,
-    alignItems: 'center',
+  containerView: {
+    marginBottom: 90,
+    marginHorizontal: 16,
   },
   cardItem: {
     flexDirection: 'row',
-    backgroundColor: 'white',
-    width: '100%',
+    backgroundColor: Colors.White,
     alignItems: 'center',
     marginVertical: 8,
     borderRadius: 5,
     borderWidth: 1,
-    borderColor: '#F1F1F1',
+    borderColor: Colors.LightGray,
     padding: 8,
   },
   imageContainer: {
-    width: '35%',
     alignItems: 'center',
   },
   button: {
-    backgroundColor: '#f0003c',
-    flexDirection: 'row',
+    backgroundColor: Colors.Red,
     justifyContent: 'center',
     alignItems: 'center',
-    width: 200,
-    height: 50,
     borderRadius: 5,
-    marginTop: 16,
-    marginBottom: 16,
-  },
-  fetchText: {
-    color: 'white',
-    width: '100%',
-    textAlign: 'center',
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  listContainer: {
-    borderRadius: 8,
-    padding: 8,
-  },
-  columnContainer: {
-    justifyContent: 'space-between',
+    marginVertical: 16,
+    padding: 10,
+    width: '50%',
   },
   cardImage: {
-    width: itemWidth - 48,
-    height: itemWidth - 48,
-  },
-  username: {
-    color: 'black',
-    fontWeight: 'bold',
-    marginTop: 8,
-  },
-  title: {
-    color: 'black',
+    width: 100,
+    height: 100,
   },
 });
