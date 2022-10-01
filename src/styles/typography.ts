@@ -2,13 +2,10 @@ import type {TextStyle} from 'react-native';
 import {StyleSheet} from 'react-native';
 import {getFont, textBase} from 'src/styles/text-base';
 
-export const getTypography = (
-  fontSize: number,
-  lineHeight: number,
-): TextStyle => {
+export const getTypography = (fontSize: number): TextStyle => {
   return {
     fontSize: fontSize,
-    lineHeight: lineHeight,
+    lineHeight: fontSize * 1.5,
   };
 };
 
@@ -19,36 +16,36 @@ export const typography = StyleSheet.create({
 
   h1: {
     ...textBase.bold,
-    ...getTypography(34, 56),
+    ...getTypography(34),
   },
 
   h2: {
     ...textBase.bold,
-    ...getTypography(22, 32),
+    ...getTypography(22),
   },
 
   h3: {
     ...textBase.semiBold,
-    ...getTypography(18, 28),
+    ...getTypography(18),
   },
 
   h4: {
     ...textBase.regular,
-    ...getTypography(16, 24),
+    ...getTypography(16),
   },
 
   h5: {
     ...textBase.regular,
-    ...getTypography(14, 20),
+    ...getTypography(14),
   },
 
   h6: {
     ...textBase.light,
-    ...getTypography(12, 18),
+    ...getTypography(12),
   },
 
   h7: {
     ...textBase.light,
-    ...getTypography(10, 15),
+    ...getTypography(10),
   },
 });

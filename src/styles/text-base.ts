@@ -152,4 +152,13 @@ export const textBase = StyleSheet.create({
   textInput: {
     padding: 0,
   },
+
+  textUnderline: {
+    textDecorationLine: 'underline',
+  },
+
+  textStrikethrough: {
+    textDecorationLine: 'line-through',
+    textDecorationStyle: 'solid',
+  },
 });
