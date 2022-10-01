@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-
-import ora from 'ora';
+const ora = require('ora');
 
 const spinner = ora('Executing post init script ');
 
